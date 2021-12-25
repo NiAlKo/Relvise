@@ -10,7 +10,7 @@
     display: flex;
     min-height: 104px;
     align-items: center;
-    @media (max-width: 402px) {
+    @media (max-width: 479px) {
       min-height: 70px;
     }
   }
@@ -29,11 +29,11 @@
       margin: 0px 0px 0px 40px;
     }
     @media (max-width: 479px) {
-      margin: 0px 0px 0px 20px;
+      margin: 0px 0px 0px 60px;
     }
-    @media (max-width: 402px) {
-      margin: 0px 0px 0px 75px;
-    }
+    // @media (max-width: 320px) {
+    //   margin: 0px 0px 0px 75px;
+    // }
   }
 }
 

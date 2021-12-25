@@ -3,39 +3,53 @@
 %all-text {
   font-weight: 500;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 143%;
   letter-spacing: 0.2px;
 }
+.text {
+  color: $second-text;
+}
 
-// /* h4 */,/* list */
-// line-height: 30px;
-
-// /* h4 */,/* list */
-// font-size: 20px;
+.text {
+  line-height: 150%;
+  font-size: 20px;
+}
+/* list */
 
 .link /* h6 */ /* h5 */ {
   line-height: 171%;
 }
+
 .link /* h6 */ {
   font-weight: 600;
 }
 
-// /* mobile-menu */, /* list */
-// font-weight: 400;
+// /* list */ {
+// 	font-weight: 400;
+// }
 
 .mobile-menu {
   @media (max-width: 479px) {
-    font-size: 30px;
+    font-size: 25px;
+    font-weight: 400;
+  }
+  @media (max-width: 409px) {
+    // font-size: 20px;
+  }
+  @media (max-width: 341px) {
+    font-size: 17px;
   }
 }
 
 .h3, 
 .logo, 
-.h2 /* btn-text */ /* h5 */ {
+.h2,
+.btn-text /* h5 */ {
   font-weight: 700;
 }
-// /* btn-text */
-// line-height: 200%;
+.btn-text {
+  line-height: 200%;
+}
 
 .h3,
 .logo /* ,h5 */ {
@@ -47,7 +61,7 @@
 .h3,
 .logo {
   font-size: 24px;
-  line-height: 32px;
+  line-height: 133%;
 }
 
 .h2 {
@@ -55,8 +69,8 @@
   line-height: 57px;
 }
 
-.h1 {
+.title-h1 {
   font-weight: 800;
   font-size: 58px;
-  line-height: 80px;
+  line-height: 138%;
 }
