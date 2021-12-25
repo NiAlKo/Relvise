@@ -1,1 +1,55 @@
 /**======================-HEADER-=================*/
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+
+  &__container {
+    display: flex;
+    min-height: 104px;
+    align-items: center;
+    @media (max-width: 402px) {
+      min-height: 70px;
+    }
+  }
+
+  &__logo {
+    color: inherit;
+  }
+
+  &__menu {
+    margin: 0px 0px 0px 132px;
+    padding: 5px 0;
+    @media (max-width: 992px) {
+      margin: 0px 0px 0px 80px;
+    }
+    @media (max-width: 767px) {
+      margin: 0px 0px 0px 40px;
+    }
+    @media (max-width: 479px) {
+      margin: 0px 0px 0px 20px;
+    }
+    @media (max-width: 402px) {
+      margin: 0px 0px 0px 75px;
+    }
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+  }
+
+  &__item:not(:last-child) {
+    padding: 0px 21px 0px 0px;
+  }
+
+  &__link {
+  }
+}
