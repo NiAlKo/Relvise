@@ -1,0 +1,214 @@
+@charset "UTF-8";
+/**====================== МИКСИНЫ =================*/
+/**====================== ШРИФТЫ ПОДКЛЮЧАЕМЫЕ =================*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+/**====================== ШРИФТЫ ПО УМОЛЧАНИЮ =================*/
+.link {
+  color: #737373;
+}
+
+body {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+.link {
+  line-height: 171%;
+}
+
+.link {
+  font-weight: 600;
+}
+
+@media (max-width: 479px) {
+  .mobile-menu {
+    font-size: 30px;
+  }
+}
+
+.h3,
+.logo,
+.h2 {
+  font-weight: 700;
+}
+
+.h3,
+.logo {
+  letter-spacing: 0.1px;
+}
+
+.h3,
+.logo {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.h2 {
+  font-size: 40px;
+  line-height: 57px;
+}
+
+.h1 {
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 80px;
+}
+
+/*!=================RESET=================!*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/** Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+/** Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/** Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/** Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/** Для элементов a, у которых есть класс, убираем подчеркивание*/
+a[class] {
+  text-decoration: none;
+}
+
+/** Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/** Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/** Наследуем шрифты для инпутов и кнопок*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  font-family: "Montserrat";
+  color: #252b42;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1046px;
+  padding: 0px 15px;
+  margin: 0 auto;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+/**======================-HEADER-=================*/
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 104px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 402px) {
+  .header__container {
+    min-height: 70px;
+  }
+}
+
+.header__logo {
+  color: inherit;
+}
+
+.header__menu {
+  margin: 0px 0px 0px 132px;
+  padding: 5px 0;
+}
+
+@media (max-width: 992px) {
+  .header__menu {
+    margin: 0px 0px 0px 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__menu {
+    margin: 0px 0px 0px 40px;
+  }
+}
+
+@media (max-width: 479px) {
+  .header__menu {
+    margin: 0px 0px 0px 20px;
+  }
+}
+
+@media (max-width: 402px) {
+  .header__menu {
+    margin: 0px 0px 0px 75px;
+  }
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menu__item:not(:last-child) {
+  padding: 0px 21px 0px 0px;
+}
