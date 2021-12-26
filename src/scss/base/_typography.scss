@@ -23,7 +23,9 @@
 .link /* h6 */ {
   font-weight: 600;
 }
-
+.link:hover {
+  text-decoration: underline;
+}
 // /* list */ {
 // 	font-weight: 400;
 // }

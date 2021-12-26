@@ -1,0 +1,103 @@
+/**======================-SERVESES-=================*/
+
+.serveses {
+  &__container {
+  }
+
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px -30px -15px;
+  }
+
+  &__column {
+    flex: 0 1 33.333%;
+    padding: 0px 15px;
+    margin: 0px 0px 30px 0px;
+    @media (max-width: 992px) {
+      flex: 0 1 50%;
+    }
+    &:last-child {
+      @media (max-width: 992px) {
+        flex: 1 1 100%;
+      }
+    }
+
+    @media (max-width: 697px) {
+      flex: 0 1 100%;
+    }
+  }
+
+  &__item {
+    height: 100%;
+    // min-width: 300px;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+    background-color: $white;
+    padding: 35px 40px;
+  }
+  &__item:hover {
+    background: $secondary-1;
+    .item-serveses__icon img {
+      display: none;
+    }
+    .item-serveses__img1,
+    .item-serveses__img2,
+    .item-serveses__img3 {
+      min-width: 48px;
+      min-height: 48px;
+    }
+    .item-serveses__img1 {
+      background: url(../../../img/icon/consulting-w.svg) no-repeat;
+    }
+    .item-serveses__img2 {
+      background: url(../../../img/icon/finance-w.svg) no-repeat;
+    }
+    .item-serveses__img3 {
+      background: url(../../../img/icon/services-w.svg) no-repeat;
+    }
+
+    .item-serveses__title,
+    .item-serveses__text {
+      color: $white;
+    }
+  }
+}
+
+.item-serveses {
+  @media (max-width: 697px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__icon {
+  }
+  // &__img {
+  //   width: 100px;
+  //   height: 100px;
+  // }
+  @media (max-width: 370px) {
+    &__title {
+      text-align: center;
+    }
+  }
+
+  &__text {
+    color: $second-text;
+  }
+  @media (max-width: 786px) {
+    &__text {
+      text-align: center;
+    }
+  }
+}
+.item-serveses > *:not(:last-child) {
+  margin: 0px 0px 10px 0px;
+}
+
+@media (max-width: 992px) {
+  .item-serveses:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

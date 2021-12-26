@@ -4,6 +4,11 @@
 
   &__main-block {
   }
+  &__serveses {
+    position: relative;
+    z-index: 2;
+    margin: -111px 0px 0px 0px;
+  }
 }
 .main-block {
   position: relative;
@@ -58,6 +63,13 @@
     border: 1px solid $secondary-1;
     color: $secondary-1;
     background: none;
+  }
+  &__btn:hover {
+    background-color: $success;
+  }
+  &__btn-border:hover {
+    background-color: $secondary-1;
+    color: $white;
   }
 
   &__img {
