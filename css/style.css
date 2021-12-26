@@ -3,7 +3,8 @@
 /**======================-ШРИФТЫ_ПОДКЛЮЧАЕМЫЕ-=================*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
 /**======================-ШРИФТЫ_ПО_УМОЛЧАНИЮ-=================*/
-.link {
+.link,
+.text-bold {
   color: #737373;
 }
 
@@ -14,6 +15,13 @@ body {
   letter-spacing: 0.2px;
 }
 
+.title-h1 {
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 138%;
+}
+
+.sub-title,
 .text {
   color: #737373;
 }
@@ -24,7 +32,8 @@ body {
 }
 
 /* list */
-.link {
+.link,
+.text-bold {
   line-height: 171%;
 }
 
@@ -49,10 +58,16 @@ body {
   }
 }
 
+.h2 {
+  font-size: 40px;
+  line-height: 57px;
+}
+
 .h3,
 .logo,
 .h2,
-.btn-text {
+.btn-text,
+.text-bold {
   font-weight: 700;
 }
 
@@ -61,25 +76,19 @@ body {
 }
 
 .h3,
-.logo {
+.logo,
+.text-bold {
   letter-spacing: 0.1px;
+}
+
+.text-bold {
+  font-size: 16px;
 }
 
 .h3,
 .logo {
   font-size: 24px;
   line-height: 133%;
-}
-
-.h2 {
-  font-size: 40px;
-  line-height: 57px;
-}
-
-.title-h1 {
-  font-weight: 800;
-  font-size: 58px;
-  line-height: 138%;
 }
 
 /*!=================RESET=================!*/
@@ -191,6 +200,11 @@ body {
      object-fit: cover;
 }
 
+.page,
+.advantages {
+  background-color: #fafafa;
+}
+
 /**======================-HEADER-=================*/
 .header {
   position: absolute;
@@ -266,6 +280,10 @@ body {
   position: relative;
   z-index: 2;
   margin: -111px 0px 0px 0px;
+}
+
+.page .header-block > *:not(:last-child) {
+  margin: 0px 0px 10px 0px;
 }
 
 .main-block {
@@ -431,15 +449,15 @@ body {
 }
 
 .serveses__item:hover .item-serveses__img1 {
-  background: url(../../../img/icon/consulting-w.svg) no-repeat;
+  background: url(../img/icon/serveses/consulting-w.svg) no-repeat;
 }
 
 .serveses__item:hover .item-serveses__img2 {
-  background: url(../../../img/icon/finance-w.svg) no-repeat;
+  background: url(../img/icon/serveses/finance-w.svg) no-repeat;
 }
 
 .serveses__item:hover .item-serveses__img3 {
-  background: url(../../../img/icon/services-w.svg) no-repeat;
+  background: url(../img/icon/serveses/services-w.svg) no-repeat;
 }
 
 .serveses__item:hover .item-serveses__title,
@@ -468,12 +486,8 @@ body {
   }
 }
 
-.item-serveses__text {
-  color: #737373;
-}
-
 @media (max-width: 786px) {
-  .item-serveses__text {
+  .item-serveses__sub-title {
     text-align: center;
   }
 }
@@ -495,6 +509,89 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+/*!=================-ADVANTAGES-=================!*/
+.advantages {
+  padding: 80px 0px;
+}
+
+.advantages__header {
+  margin: 0px 0px 50px 0px;
+  text-align: center;
+}
+
+.advantages__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px -15px;
+}
+
+.advantages__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+  padding: 15px 15px;
+}
+
+.advantages__column .item-advantages {
+  text-align: center;
+  padding: 30px;
+}
+
+.advantages__column .item-advantages__icon {
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 1035px) {
+  .advantages__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+  }
+}
+
+@media (max-width: 520px) {
+  .advantages__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+}
+
+.advantages__item {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+}
+
+@media (max-width: 992px) {
+  .advantages__header {
+    margin: 0px 0px 35px 0px;
+  }
+}
+
+@media (max-width: 992px) {
+  .advantages {
+    padding: 50px 0px;
+  }
+}
+
+.item-advantages > *:not(:last-child) {
+  margin: 0px 0px 10px 0px;
 }
 
 /**======================-FOOTER-=================*/

@@ -44,8 +44,13 @@ body {
   left: 0;
   object-fit: cover;
 }
+.page,
+.advantages {
+  background-color: $bg;
+}
 //**======================-ПОДКЛЮЧЕНИЕ_СТИЛЕЙ-=================*/
 @import "./section/header";
 @import "./section/page";
 @import "./section/serveses";
+@import "./section/advantages";
 @import "./section/footer";

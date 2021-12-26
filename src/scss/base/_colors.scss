@@ -4,9 +4,10 @@ $second-text: #737373;
 $primary: #ff7b47;
 $secondary-1: #0d5c63;
 $secondary-2: #17213c;
+$bg: #fafafa;
+$dark-background: #252b42;
 $background-gradient-1: linear-gradient(270deg, #d71489 -1.04%, #004788 100%);
 $text: #252b42;
-$dark-background: #252b42;
 $hover: #2a7cc7;
 $disabled-element: #8ec2f2;
 $muted: #bdbdbd;
@@ -15,6 +16,7 @@ $alert: #e77c40;
 $danger: #e74040;
 $white: #ffffff;
 
-.link {
+.link,
+.text-bold {
   color: $second-text;
 }

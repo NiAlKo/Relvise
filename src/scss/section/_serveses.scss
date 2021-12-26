@@ -47,13 +47,13 @@
       min-height: 48px;
     }
     .item-serveses__img1 {
-      background: url(../../../img/icon/consulting-w.svg) no-repeat;
+      background: url(../img/icon/serveses/consulting-w.svg) no-repeat;
     }
     .item-serveses__img2 {
-      background: url(../../../img/icon/finance-w.svg) no-repeat;
+      background: url(../img/icon/serveses/finance-w.svg) no-repeat;
     }
     .item-serveses__img3 {
-      background: url(../../../img/icon/services-w.svg) no-repeat;
+      background: url(../img/icon/serveses/services-w.svg) no-repeat;
     }
 
     .item-serveses__title,
@@ -81,11 +81,10 @@
     }
   }
 
-  &__text {
-    color: $second-text;
+  &__sub-title {
   }
   @media (max-width: 786px) {
-    &__text {
+    &__sub-title {
       text-align: center;
     }
   }

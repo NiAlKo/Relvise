@@ -9,6 +9,12 @@
     z-index: 2;
     margin: -111px 0px 0px 0px;
   }
+  &__advantages {
+  }
+
+  .header-block > *:not(:last-child) {
+    margin: 0px 0px 10px 0px;
+  }
 }
 .main-block {
   position: relative;
@@ -87,5 +93,12 @@
       opacity: 0.4;
       object-position: right;
     }
+  }
+}
+.header-block {
+  &__title {
+  }
+
+  &__text {
   }
 }
