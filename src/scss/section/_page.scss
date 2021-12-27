@@ -11,9 +11,19 @@
   }
   &__advantages {
   }
+  .header-block {
+    text-align: center;
+    &__title {
+    }
 
+    &__text {
+    }
+  }
   .header-block > *:not(:last-child) {
     margin: 0px 0px 10px 0px;
+  }
+
+  &__advice {
   }
 }
 .main-block {
@@ -93,12 +103,5 @@
       opacity: 0.4;
       object-position: right;
     }
-  }
-}
-.header-block {
-  &__title {
-  }
-
-  &__text {
   }
 }

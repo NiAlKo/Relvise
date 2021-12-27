@@ -43,8 +43,11 @@
     .item-serveses__img1,
     .item-serveses__img2,
     .item-serveses__img3 {
-      min-width: 48px;
-      min-height: 48px;
+      width: 48px;
+      height: 48px;
+    }
+    .item-serveses__img3 {
+      margin: 0px 0px -10px 0px;
     }
     .item-serveses__img1 {
       background: url(../img/icon/serveses/consulting-w.svg) no-repeat;
