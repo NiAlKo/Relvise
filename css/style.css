@@ -199,7 +199,7 @@ body {
      object-fit: cover;
 }
 
-select,
+.about,
 .footer {
   background-color: #ffffff;
 }
@@ -830,6 +830,44 @@ select,
 
 .item-about__title:not(:last-child) {
   margin: 0px 0px 5px 0px;
+}
+
+/**======================-CLIENTS-=================*/
+.clients {
+  padding: 50px 0px;
+}
+
+@media (max-width: 767px) {
+  .clients {
+    padding: 25px 0px;
+  }
+}
+
+.clients__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clients__item {
+  padding: 10px 10px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 16.6667%;
+          flex: 0 1 16.6667%;
+  text-align: center;
+  min-width: 110px;
+}
+
+.clients__item img {
+  display: inline-block;
 }
 
 /**======================-FOOTER-=================*/

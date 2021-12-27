@@ -45,7 +45,7 @@ body {
   left: 0;
   object-fit: cover;
 }
-select,
+.about,
 .footer {
   background-color: $white;
 }
@@ -57,4 +57,5 @@ select,
 @import "./section/advantages";
 @import "./section/advice";
 @import "./section/about";
+@import "./section/clients";
 @import "./section/footer";

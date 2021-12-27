@@ -1,0 +1,27 @@
+/**======================-CLIENTS-=================*/
+
+.clients {
+  padding: 50px 0px;
+  @media (max-width: 767px) {
+    padding: 25px 0px;
+  }
+  &__container {
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    padding: 10px 10px;
+    flex: 0 1 16.6667%;
+    text-align: center;
+    min-width: 110px;
+  }
+  &__item img {
+    display: inline-block;
+  }
+}
