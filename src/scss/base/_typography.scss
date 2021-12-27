@@ -25,8 +25,13 @@
 .link /* h6 */ {
   font-weight: 600;
 }
-.link:hover {
+.link:hover,
+.item-advice__link:hover {
   text-decoration: underline;
+}
+.link:active,
+.item-advice__link:active {
+  opacity: 0.7;
 }
 // /* list */ {
 // 	font-weight: 400;

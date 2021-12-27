@@ -60,6 +60,10 @@
     background-color: $secondary-1;
     color: $white;
   }
+  &__btn:active,
+  &__btn-border:active {
+    opacity: 0.5;
+  }
 
   &__img {
     position: absolute;

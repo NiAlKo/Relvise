@@ -27,6 +27,9 @@
   }
   &__about {
   }
-  &__clients {
+  &__clients:not(:last-child) {
+    margin: 0px 0px 20px 0px;
+  }
+  &__subscribe {
   }
 }

@@ -59,7 +59,10 @@ img {
 /** Наследуем шрифты для инпутов и кнопок*/
 input,
 button,
-textarea,
-select {
+textarea {
   font: inherit;
+}
+/** Курсор для кнопок */
+button {
+  cursor: pointer;
 }

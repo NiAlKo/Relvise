@@ -1,0 +1,90 @@
+/**======================-SUBSCRIBE-=================*/
+
+.subscribe {
+  position: relative;
+  padding: 0px 0px 20px 0px;
+  &__container {
+  }
+
+  &__body {
+    position: relative;
+    z-index: 2;
+
+    background-color: $secondary-2;
+    border-radius: 2px;
+    padding: 30px 40px 30px 50px;
+
+    @media (min-width: 1070px) {
+      margin: 0px 32px;
+    }
+    @media (min-width: 800px) {
+      display: flex;
+      justify-content: space-between;
+    }
+    @media (max-width: 800px) {
+      margin: 0px -15px;
+      padding: 25px 15px;
+    }
+  }
+
+  &__title {
+    flex: 0 1 50%;
+
+    color: $white;
+    @media (min-width: 800px) {
+      max-width: 266px;
+    }
+    @media (max-width: 800px) {
+      padding: 0px 0px 20px 0px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    align-self: center;
+    flex: 0 1 50%;
+  }
+
+  &__input {
+    width: 100%;
+    min-height: 58px;
+    padding: 15px 20px;
+    flex: 1 1 auto;
+    background: $bg-input;
+    border: 1px solid $border;
+    border-radius: 5px 0px 0px 5px;
+    border-right: 0;
+    color: $second-text;
+  }
+  &__input:focus {
+    color: $secondary-2;
+  }
+  &__btn {
+    background: $primary;
+    border: 1px solid $border;
+    box-sizing: border-box;
+    border-radius: 0px 5px 5px 0px;
+    min-height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 22.5px;
+  }
+  &__btn:hover {
+    background-color: $success;
+  }
+  &__btn:active {
+    background-color: $success-a;
+  }
+}
+
+.subscribe::before {
+  content: "";
+  position: absolute;
+  background-color: $dark-background;
+  height: 77px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
