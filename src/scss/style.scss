@@ -16,6 +16,7 @@ body {
   font-family: "Montserrat";
   @extend %all-text;
   color: $text;
+  background-color: $bg;
 }
 
 //**======================-УПАКОВКА-=================*/
@@ -44,14 +45,16 @@ body {
   left: 0;
   object-fit: cover;
 }
-.page,
-.advantages {
-  background-color: $bg;
+select,
+.footer {
+  background-color: $white;
 }
 //**======================-ПОДКЛЮЧЕНИЕ_СТИЛЕЙ-=================*/
 @import "./section/header";
 @import "./section/page";
+@import "./section/main-block";
 @import "./section/serveses";
 @import "./section/advantages";
 @import "./section/advice";
+@import "./section/about";
 @import "./section/footer";

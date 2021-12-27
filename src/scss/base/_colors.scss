@@ -16,7 +16,10 @@ $alert: #e77c40;
 $danger: #e74040;
 $white: #ffffff;
 
-.link,
-.text-bold {
+.link {
+  color: $second-text;
+}
+.sub-title,
+.text {
   color: $second-text;
 }

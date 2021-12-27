@@ -2,13 +2,21 @@
 
 .advice {
   padding: 80px 0px;
+  @media (max-width: 1045px) {
+    padding: 0px 0px 80px 0px;
+  }
   &__container {
   }
 
   &__header {
     margin: 45px 0px;
   }
-
+  // @media (max-width: 374px) {
+  //   &__header > *:not(:first-child) {
+  //     text-align: left;
+  //     padding: 0 30px;
+  //   }
+  // }
   &__body {
     display: flex;
     flex-wrap: wrap;
@@ -18,31 +26,19 @@
   &__column {
     flex: 0 1 25%;
     padding: 15px 15px;
-  }
-  @media (max-width: 1045px) {
-    &__column {
+    @media (max-width: 1045px) {
       flex: 0 1 50%;
     }
-  }
-  @media (max-width: 520px) {
-    &__column {
+    @media (max-width: 520px) {
       flex: 0 1 100%;
     }
   }
+
   &__item {
     background-color: $white;
   }
-  @media (max-width: 1045px) {
-    &__item {
-      text-align: center;
-    }
-  }
 }
-@media (max-width: 1045px) {
-  .advice {
-    padding: 0px 0px 80px 0px;
-  }
-}
+
 .item-advice {
   height: 100%;
   display: flex;
@@ -54,6 +50,7 @@
   }
 
   &__link {
+    color: inherit;
     display: inline-block;
     margin: 0px 0px 15px 0px;
   }

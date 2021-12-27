@@ -1,0 +1,79 @@
+/**======================-MAIN-BLOCK-=================*/
+.main-block {
+  position: relative;
+
+  &__container {
+  }
+
+  &__body {
+    position: relative;
+    padding: 184px 0px 191px 0px;
+    max-width: 409px;
+    z-index: 2;
+  }
+
+  &__body > *:not(:last-child) {
+    margin: 0px 0px 35px 0px;
+  }
+  &__title {
+    @media (max-width: 479px) {
+      font-size: 42px;
+    }
+  }
+
+  &__text {
+  }
+
+  &__btns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__btn {
+    display: flex;
+    min-height: 48px;
+    border-radius: 37px;
+    background-color: $primary;
+    color: $white;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 36px;
+    @media (max-width: 385px) {
+      margin: 10px 10px 0px 0px;
+      flex: 1 1 100%;
+    }
+  }
+
+  &__btn:not(:last-child) {
+    margin: 0px 10px 0px 0px;
+  }
+
+  &__btn-border {
+    border: 1px solid $secondary-1;
+    color: $secondary-1;
+    background: none;
+  }
+  &__btn:hover {
+    background-color: $success;
+  }
+  &__btn-border:hover {
+    background-color: $secondary-1;
+    color: $white;
+  }
+
+  &__img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  &__img img {
+    @media (max-width: 1300px) {
+      object-position: right;
+    }
+    @media (max-width: 992px) {
+      opacity: 0.4;
+    }
+  }
+}

@@ -14,9 +14,11 @@
     flex: 0 1 33.333%;
     padding: 0px 15px;
     margin: 0px 0px 30px 0px;
+
     @media (max-width: 992px) {
       flex: 0 1 50%;
     }
+
     &:last-child {
       @media (max-width: 992px) {
         flex: 1 1 100%;
@@ -37,31 +39,32 @@
   }
   &__item:hover {
     background: $secondary-1;
-    .item-serveses__icon img {
-      display: none;
-    }
-    .item-serveses__img1,
-    .item-serveses__img2,
-    .item-serveses__img3 {
-      width: 48px;
-      height: 48px;
-    }
-    .item-serveses__img3 {
-      margin: 0px 0px -10px 0px;
-    }
-    .item-serveses__img1 {
-      background: url(../img/icon/serveses/consulting-w.svg) no-repeat;
-    }
-    .item-serveses__img2 {
-      background: url(../img/icon/serveses/finance-w.svg) no-repeat;
-    }
-    .item-serveses__img3 {
-      background: url(../img/icon/serveses/services-w.svg) no-repeat;
-    }
+    .item-serveses {
+      &__icon img {
+        display: none;
+      }
+      &__img1,
+      &__img2,
+      &__img3 {
+        display: block;
+      }
 
-    .item-serveses__title,
-    .item-serveses__text {
-      color: $white;
+      &__img1 {
+        background: url(../img/icon/serveses/consulting-w.svg) no-repeat;
+        margin: 0px 0px -5px 0px;
+      }
+      &__img2 {
+        background: url(../img/icon/serveses/finance-w.svg) no-repeat;
+      }
+      &__img3 {
+        background: url(../img/icon/serveses/services-w.svg) no-repeat;
+        margin: 0px 0px -10px 0px;
+      }
+
+      &__title,
+      &__text {
+        color: $white;
+      }
     }
   }
 }
@@ -78,28 +81,35 @@
   //   width: 100px;
   //   height: 100px;
   // }
-  @media (max-width: 370px) {
-    &__title {
+
+  &__title {
+    @media (max-width: 370px) {
       text-align: center;
     }
   }
 
   &__sub-title {
-  }
-  @media (max-width: 786px) {
-    &__sub-title {
+    @media (max-width: 786px) {
       text-align: center;
     }
   }
-}
-.item-serveses > *:not(:last-child) {
-  margin: 0px 0px 10px 0px;
-}
 
-@media (max-width: 992px) {
-  .item-serveses:last-child {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  & > *:not(:last-child) {
+    margin: 0px 0px 10px 0px;
+  }
+
+  &:last-child {
+    @media (max-width: 992px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__img1,
+  &__img2,
+  &__img3 {
+    width: 48px;
+    height: 48px;
+    display: none;
   }
 }

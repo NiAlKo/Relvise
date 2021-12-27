@@ -2,6 +2,9 @@
 
 .advantages {
   padding: 80px 0px;
+  @media (max-width: 992px) {
+    padding: 60px 0px 40px 0px;
+  }
   &__container {
   }
 
@@ -20,27 +23,17 @@
     flex: 0 1 25%;
     padding: 15px 15px;
     // margin: 0px 30px 0px 0px;
-  }
-
-  @media (max-width: 1035px) {
-    &__column {
+    @media (max-width: 1035px) {
       flex: 0 1 50%;
     }
-  }
-
-  @media (max-width: 520px) {
-    &__column {
+    @media (max-width: 520px) {
       flex: 0 1 100%;
     }
   }
+
   &__item {
     align-items: center;
     background-color: $white;
-  }
-}
-@media (max-width: 992px) {
-  .advantages {
-    padding: 60px 0px 40px 0px;
   }
 }
 
@@ -58,6 +51,7 @@
   }
 
   &__text {
+    color: $second-text;
   }
 }
 .item-advantages > *:not(:last-child) {
