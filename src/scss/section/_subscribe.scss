@@ -63,25 +63,13 @@
     color: $secondary-2;
   }
   &__btn {
-    background: $primary;
+    min-height: 58px;
     border: 1px solid $border;
     border-radius: 0px 5px 5px 0px;
-    min-height: 58px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     padding: 0px 22px;
-    transition: all 0.3s ease 0s;
     @media (max-width: 370px) {
       padding: 0px 10px;
     }
-  }
-  &__btn:hover {
-    background-color: $success;
-  }
-  &__btn:active {
-    background-color: $success-a;
   }
 }
 

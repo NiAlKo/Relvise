@@ -30,15 +30,10 @@
   }
 
   &__btn {
-    display: flex;
     min-height: 48px;
     border-radius: 37px;
-    background-color: $primary;
     color: $white;
-    align-items: center;
-    justify-content: center;
     padding: 5px 36px;
-    transition: all 0.3s ease 0s;
     @media (max-width: 385px) {
       margin: 10px 10px 0px 0px;
       flex: 1 1 100%;
@@ -54,14 +49,12 @@
     color: $secondary-1;
     background: none;
   }
-  &__btn:hover {
-    background-color: $success;
-  }
+
   &__btn-border:hover {
     background-color: $secondary-1;
     color: $white;
   }
-  &__btn:active,
+
   &__btn-border:active {
     opacity: 0.5;
   }

@@ -1,0 +1,44 @@
+/**======================-CONTACT-US-=================*/
+
+.contact-us {
+  padding: 40px 0px;
+  background-color: $white;
+  &__container {
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width: 687px) {
+      justify-content: center;
+    }
+  }
+  &__content {
+    padding: 0px 20px 0px 0px;
+    @media (max-width: 687px) {
+      text-align: center;
+    }
+  }
+  &__content > *:not(:last-child) {
+    margin: 0px 0px 10px 0px;
+  }
+  &__title {
+  }
+
+  &__sub-title {
+    color: $second-text;
+  }
+
+  &__btn {
+    min-height: 58px;
+    border-radius: 5px;
+    padding: 0px 40px;
+    color: $white;
+    border: none;
+    outline: none;
+    @media (max-width: 687px) {
+      margin: 20px 0px 0px 0px;
+    }
+  }
+}

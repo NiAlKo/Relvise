@@ -49,6 +49,20 @@ body {
 .footer {
   background-color: $white;
 }
+.btn {
+  background: $primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+}
+.btn:hover {
+  background-color: $success;
+}
+.btn:active {
+  background-color: $success-a;
+}
 //**======================-ПОДКЛЮЧЕНИЕ_СТИЛЕЙ-=================*/
 @import "./section/header";
 @import "./section/page";
@@ -60,4 +74,5 @@ body {
 @import "./section/clients";
 @import "./section/subscribe";
 @import "./section/contact";
+@import "./section/contact-us";
 @import "./section/footer";
