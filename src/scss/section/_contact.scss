@@ -1,0 +1,134 @@
+/**======================-CONTACT-=================*/
+
+.contact {
+  padding: 80px 0px 68px 0px;
+  &__container {
+    transition: all 0.3s ease 0s;
+  }
+
+  &__header {
+    margin: 0px 0px 80px;
+  }
+
+  &__body {
+    margin: -15px -15px;
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+  }
+
+  &__column {
+    flex: 0 1 33.333%;
+    padding: 15px 15px;
+    @media (max-width: 992px) {
+      flex: 0 1 50%;
+    }
+    &:last-child {
+      @media (max-width: 992px) {
+        flex: 1 1 100%;
+      }
+    }
+    @media (max-width: 767px) {
+      flex: 1 1 100%;
+    }
+    @media (max-width: 334px) {
+      width: 100%;
+    }
+  }
+  &__column:hover {
+    // flex: 1 1 auto;
+
+    @media (min-width: 992px) {
+      margin: 0px -15px;
+      padding: 15px 0px;
+    }
+    @media (max-width: 992px) {
+      margin: 0px;
+      padding: 15px 0px;
+    }
+  }
+  &__item {
+    background-color: $white;
+    padding: 50px 40px;
+  }
+  &__item #img-hidden {
+    display: none;
+  }
+  &__item:hover {
+    background: $dark-background;
+
+    &:last-child {
+      @media (min-width: 992px) {
+        padding: 80px 40px;
+      }
+    }
+    .item-contact {
+      &__icon #img1,
+      &__icon #img2,
+      &__icon #img3 {
+        display: none;
+      }
+      &__icon #img-hidden {
+        display: block;
+      }
+      &__email,
+      &__support {
+        color: $white;
+      }
+      &__support:hover {
+        color: $danger;
+      }
+      &__support:active {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+.item-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__icon {
+  }
+
+  &__emails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__email,
+  &__support {
+    color: inherit;
+  }
+
+  &__support {
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px 20px;
+    min-height: 44px;
+    color: $primary;
+    border: 1px solid $primary;
+    border-radius: 5px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+  }
+  &__btn:hover {
+    text-decoration: none;
+    background: $primary;
+    color: $white;
+  }
+  &__btn:active {
+    opacity: 0.5;
+  }
+}
+.item-contact > *:not(:last-child) {
+  margin: 0px 0px 15px 0px;
+}

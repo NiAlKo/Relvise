@@ -9,7 +9,7 @@
   &__body {
     position: relative;
     z-index: 2;
-
+    transition: all 0.3s ease 0s;
     background-color: $secondary-2;
     border-radius: 2px;
     padding: 30px 40px 30px 50px;
@@ -55,6 +55,9 @@
     border-radius: 5px 0px 0px 5px;
     border-right: 0;
     color: $second-text;
+    @media (max-width: 370px) {
+      padding: 15px 10px;
+    }
   }
   &__input:focus {
     color: $secondary-2;
@@ -62,14 +65,17 @@
   &__btn {
     background: $primary;
     border: 1px solid $border;
-    box-sizing: border-box;
     border-radius: 0px 5px 5px 0px;
     min-height: 58px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0px 22.5px;
+    padding: 0px 22px;
+    transition: all 0.3s ease 0s;
+    @media (max-width: 370px) {
+      padding: 0px 10px;
+    }
   }
   &__btn:hover {
     background-color: $success;
