@@ -1,1 +1,124 @@
 /**======================-FOOTER-=================*/
+.footer {
+  &__top {
+    background-color: $secondary-2;
+    padding: 35px 0px;
+  }
+
+  &__top-container {
+  }
+  &__top-body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px;
+    @media (max-width: 374px) {
+    }
+  }
+  &__column,
+  &__column-contacts {
+    padding: 15px 15px;
+  }
+  &__column {
+    flex: 0 1 16.6667%;
+    @media (max-width: 992px) {
+      flex: 0 1 25%;
+    }
+    @media (max-width: 700px) {
+      flex: 0 1 50%;
+    }
+    @media (max-width: 374px) {
+      flex: 0 1 100%;
+      text-align: center;
+    }
+  }
+  &__column-contacts {
+    flex: 0 1 33.334%;
+    @media (max-width: 992px) {
+      flex: 1 1 100%;
+    }
+    @media (max-width: 374px) {
+      text-align: center;
+    }
+  }
+
+  &__list,
+  &__list-contacts,
+  &__title {
+    color: $white;
+  }
+  &__list > *:not(:last-child),
+  &__list-contacts > *:not(:last-child) {
+    margin: 0px 0px 10px;
+  }
+
+  &__title {
+    margin: 0px 0px 20px;
+  }
+
+  &__item,
+  &__item-contacts {
+    .link {
+      color: inherit;
+    }
+  }
+
+  &__item-contacts {
+    display: flex;
+    @media (max-width: 374px) {
+      justify-content: center;
+    }
+  }
+  &__item-contacts .link {
+    margin: 0px 0px 0px 10px;
+  }
+  &__item-contacts .link-map {
+    @media (max-width: 373px) {
+      margin: 0px 0px 0px 5px;
+    }
+  }
+  &__bottom {
+    padding: 15px 0px;
+  }
+
+  &__bottom-container {
+  }
+
+  &__bottom-body {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 600px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__bottom-text {
+    color: $second-text;
+    padding: 10px 0px;
+    @media (max-width: 425px) {
+      text-align: center;
+    }
+  }
+
+  &__bottom-social {
+    margin: 0px 0px 0px 36px;
+    padding: 10px 0px;
+  }
+}
+// .link-map {
+//   @media (max-width: 374px) {
+//     max-width: 161px;
+//   }
+// }
+.social-block {
+  &__items {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+  }
+  &__item:not(:last-child) {
+    margin: 0px 20px 0px 0px;
+  }
+}

@@ -18,11 +18,14 @@
 }
 /* list */
 
-.link, .text-bold /* h6 */ {
+.link,
+.text-bold,
+.h4 {
   line-height: 171%;
 }
 
-.link /* h6 */ {
+.link,
+.h4 {
   font-weight: 600;
 }
 .link:hover,
