@@ -12,9 +12,8 @@
   &__body {
     display: flex;
     align-items: center;
-    @media (min-width: 992px) {
-      padding: 0px 15px;
-    }
+
+    margin: 0px -7.5px;
 
     @media (max-width: 992px) {
       flex-wrap: wrap;
@@ -45,7 +44,6 @@
   &__item {
     background-color: $white;
     padding: 50px 40px;
-
     & #img-hidden {
       display: none;
     }
@@ -53,7 +51,6 @@
       position: relative;
       background: $dark-background;
 
-      // padding: 50px 0px;
       @media (min-width: 992px) {
         margin: 0px -30px;
         &::after,
