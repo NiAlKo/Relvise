@@ -260,8 +260,9 @@ body {
   .header__logo {
     position: absolute;
     width: 100%;
+    padding: 20px 0px 0px 0px;
     left: 15px;
-    top: 25px;
+    top: 0px;
     z-index: 100;
     background-color: #fafafa;
   }
@@ -270,6 +271,7 @@ body {
 .header__menu {
   margin: 0px 0px 0px 132px;
   padding: 5px 0;
+  scrollbar-width: none;
   overflow: auto;
 }
 
@@ -293,6 +295,11 @@ body {
   .header__menu .menu__item:not(:last-child) {
     padding: 0px 21px 0px 0px;
   }
+}
+
+.header__menu::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 @media (max-width: 479px) {

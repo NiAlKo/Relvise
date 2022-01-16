@@ -2,6 +2,7 @@
 .header {
   &__container {
     min-height: 80px;
+
     @media (min-width: 479px) {
       display: flex;
       min-height: 104px;
@@ -14,8 +15,9 @@
     @media (max-width: 479px) {
       position: absolute;
       width: 100%;
+      padding: 20px 0px 0px 0px;
       left: 15px;
-      top: 25px;
+      top: 0px;
       z-index: 100;
       background-color: $bg;
     }
@@ -37,7 +39,12 @@
         padding: 0px 21px 0px 0px;
       }
     }
+    scrollbar-width: none;
     overflow: auto;
+  }
+  &__menu::-webkit-scrollbar {
+    width: 0;
+    height: 0;
   }
   &__menu > * {
     @media (max-width: 479px) {
